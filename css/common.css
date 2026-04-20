@@ -1,0 +1,242 @@
+@charset "utf-8";
+@import url("reset.css");
+@import url("font.css");
+@import url("all.min.css");
+
+/* 공통사항 */
+body {
+  font-family: Base, sans-serif;
+  font-size: 18px;
+  color: hsla(0, 0%, 93%, 0.8);
+  background-color: black;
+}
+
+[class$=inner] {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+
+[class$=btn] {
+  display: inline-block;
+  padding: 15px 30px;
+  cursor: pointer;
+
+  color: hsla(0, 0%, 93%, 0.8);
+  font-size: 18px;
+  font-family: BaseB;
+  border-radius: 50px;
+  border: hsla(0, 0%, 93%, 0.3) 2px solid;
+  backdrop-filter: blur(10px);
+  background-color: hsla(0, 0%, 20%, 0.4);
+  transition: all 0.2s;
+}
+
+[class$=btn]:hover {
+  display: inline-block;
+  padding: 15px 30px;
+  cursor: pointer;
+
+  color: hsla(0, 0%, 93%, 1);
+  font-size: 18px;
+  font-family: BaseB;
+  border-radius: 50px;
+  border: hsla(0, 0%, 93%, 0.3) 2px solid;
+  backdrop-filter: blur(10px);
+  background-color: hsl(0, 0%, 20%);
+  transform: scale(1.1);
+}
+
+/* scroll-bar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: hsla(0, 0%, 20%, 0.4);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #b448fb, #f038a2);
+  border-radius: 25px;
+  border: 1px solid hsla(0, 0%, 20%, 0.4);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c77aff;
+}
+
+
+/* header */
+#header {
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  height: 80px;
+
+  backdrop-filter: blur(10px);
+  background-color: hsla(0, 0%, 0%, 0.5);
+}
+
+#header.shrink {
+  height: 60px;
+  background-color: hsla(0, 0%, 0%);
+  transition: all 0.2s ease;
+}
+
+#header.shrink+.header-wrap+#main .tab-menu,
+body.scrolled .tab-menu {
+  top: 60px;
+}
+
+#header.shrink .logo img {
+  height: 60px;
+  transition: all 0.3s ease;
+  object-fit: cover;
+}
+
+#header .header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* header .logo */
+#header .logo {
+  width: 140px;
+}
+
+#header .logo a {
+  display: block;
+}
+
+#header .logo a img {
+  width: 100%;
+  height: 80px;
+}
+
+/* header .gnb */
+#header .gnb>ul {
+  display: flex;
+  gap: 3px;
+}
+
+#header .gnb>ul>li {
+  position: relative;
+  width: 120px;
+
+  text-align: center;
+}
+
+#header .gnb>ul>li>a {
+  display: block;
+  height: 100%;
+  padding: 10px 0;
+}
+
+#header .gnb>ul>li:hover>a {
+  color: hsla(0, 0%, 93%, 1);
+}
+
+/* header .sub */
+#header .sub {
+  display: none;
+
+  position: absolute;
+  top: 40px;
+  color: #333;
+}
+
+#header .sub ul li {
+  width: 120px;
+  border-radius: 0 0 10px 10px;
+  background-color: hsla(0, 0%, 93%, 1);
+}
+
+#header .sub ul li a {
+  display: block;
+  height: 100%;
+  padding: 10px 0;
+
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+#header .sub ul li a:hover,
+#header .sub ul li a.on {
+  background-color: #fff;
+}
+
+#header .sub ul li a:last-child:hover,
+#header .sub ul li a:last-child.on {
+    border-radius: 0 0 10px 10px;
+  }
+
+  #header .btn-menu {
+    display: none;
+  }
+
+
+  /* footer */
+  #footer {
+    padding-top: 80px;
+    background: linear-gradient(to top, #b346fb4d 0%, #150815 50%, #000000 100%);
+  }
+
+  /* footer-up */
+  .footer-up {
+    height: 270px;
+  }
+
+  .footer-up .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-up .footer-left a {
+    display: block;
+    height: 100%;
+  }
+
+  .footer-up .footer-left img {
+    display: block;
+  }
+
+  .footer-up .footer-left a:first-child img {
+    width: 100px;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer-up .footer-right address {
+    margin-top: 35px;
+    font-size: 14px;
+  }
+
+  .footer-up .sns-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+  }
+
+  .footer-up .sns-wrap a {
+    display: block;
+    height: 100%;
+
+    font-size: 30px;
+  }
+
+  /* footer-down */
+  .footer-down {
+    height: 90px;
+    border-top: 1px solid #000;
+  }
+
+  .footer-down .copy {
+    padding-top: 35px;
+    font-size: 14px;
+  }

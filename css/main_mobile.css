@@ -1,0 +1,315 @@
+@charset "UTF-8";
+
+/* 공통요소 */
+[class$=inner] {
+  width: 100%;
+}
+
+[class$=btn] {
+  font-size: 16px;
+}
+
+[class$=btn]:hover {
+  font-size: 16px;
+  box-shadow: none;
+  transform: none;
+}
+
+/* header */
+#header {
+  height: 70px;
+}
+
+#header .header-inner {
+  padding: 0 30px 0 20px;
+}
+
+#header .logo {
+  width: 110px;
+}
+
+#header .logo a {
+  display: block;
+}
+
+#header .logo a img {
+  width: 100%;
+  height: 70px;
+}
+
+#header .gnb>ul {
+  display: none;
+  flex-direction: column;
+
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+  background-color: hsla(0, 0%, 93%, 0.95);
+  color: #333;
+}
+
+#header .gnb>ul::-webkit-scrollbar {
+  width: 2px;
+}
+
+#header .gnb>ul::-webkit-scrollbar-thumb {
+  background: hsla(0, 0%, 20%, 0.4);
+  border-radius: 10px;
+}
+
+#header .gnb>ul>li {
+  width: 100%;
+  text-align: left;
+}
+
+#header .gnb>ul>li>a {
+  padding: 35px 0;
+  padding-left: 30px;
+}
+
+#header .gnb>ul>li:hover>a {
+  color: #333;
+}
+
+#header .sub {
+  position: static;
+  top: 70px;
+  left: 0;
+
+  width: 100%;
+}
+
+#header .sub ul li {
+  width: 100%;
+  border-radius: 0;
+  background-color: #fff;
+}
+
+#header .sub ul li a {
+  padding: 25px 0;
+  padding-left: 30px;
+  font-size: 16px;
+}
+
+#header .sub ul li a:last-child:hover {
+  border-radius: 0;
+}
+
+#header .btn-menu {
+  display: block;
+
+  font-size: 30px;
+  color: hsla(0, 0%, 93%, 0.8);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#header .btn-menu .fa-bars {
+  display: block;
+}
+
+#header .btn-menu .fa-times {
+  display: none;
+}
+
+#header .btn-menu.active .fa-bars {
+  display: none;
+}
+
+#header .btn-menu.active .fa-times {
+  display: block;
+}
+
+
+/* main */
+#main [class$=inner] {
+  padding: 0 30px;
+}
+
+/* 공통요소 */
+#main h2 {
+  font-size: 7.2vw;
+}
+
+#main h2+p {
+  margin-bottom: 45px;
+  font-size: 4vw;
+}
+
+.cont-3-inner .list,
+.cont-4-inner .list {
+  gap: 40px;
+}
+
+.cont-3-inner .list li,
+.cont-4-inner .list li {
+  width: 100%;
+}
+
+.cont-4-inner .btn-wrap,
+.cont-5-inner .btn-wrap {
+  width: 75%;
+  text-align: center;
+}
+
+/* visual */
+#visual {
+  height: 650px;
+}
+
+#visual .text-box {
+  top: 45%;
+}
+
+#visual b {
+  font-size: 15vw;
+}
+
+#visual p {
+  padding-top: 20px;
+  white-space: nowrap;
+  font-size: 3.7vw;
+}
+
+#visual .btn-wrap {
+  display: flex;
+  flex-direction: column;
+
+  width: 65%;
+  margin: auto;
+  padding: 40px 0 0 0;
+  white-space: nowrap;
+}
+
+#visual .buy-btn {
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.scroll-down-wrap {
+  left: 49.5%;
+}
+
+/* cont-1 */
+.cont-1-inner {
+  gap: 20px;
+}
+
+.cont-1-inner article {
+  width: 550px;
+}
+
+.cont-1-inner article:hover {
+  border: 1px solid rgba(138, 43, 226, 0.2);
+}
+
+.cont-1-inner article:last-child:hover {
+  transform: none;
+}
+
+/* cont-2 */
+.cont-2-inner .text-box {
+  white-space: nowrap;
+  font-size: 3.6vw;
+}
+
+.cont-2-inner .text-box .block {
+  display: block;
+}
+
+.cont-2-inner .text-box h2 {
+  font-size: 6.5vw !important;
+}
+
+/* cont-3 */
+.cont-3-inner .list li a:hover img {
+  transform: none;
+}
+
+/* cont-4 */
+.cont-4-inner .list {
+  justify-content: center;
+}
+
+/* cont-5 */
+.cont-5-inner h2 {
+  margin-top: 30px;
+}
+
+.cont-5-inner .list {
+  width: 100%;
+  margin-top: 45px;
+  padding: 5px 15px 10px 15px;
+}
+
+.cont-5-inner .list li a {
+  font-size: 14px;
+}
+
+.cont-5-inner li p {
+  width: 300px;
+  margin-left: 0;
+  padding: 4px 0;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cont-5-inner li:nth-child(1) p,
+.cont-5-inner li:nth-child(2) p {
+  margin-left: 25px;
+}
+
+.cont-5-inner li .date {
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+/* footer */
+.footer-inner {
+  padding: 0 30px;
+}
+
+/* footer-up */
+.footer-up {
+  height: 250px;
+}
+
+.footer-up .footer-left img {
+  width: 90px;
+}
+
+.footer-up .footer-left a:first-child img {
+  width: 70px;
+}
+
+.footer-up .footer-right address {
+  margin-top: 25px;
+  font-size: 12px;
+}
+
+.footer-up .sns-wrap {
+  margin-top: 20px;
+}
+
+.footer-up .sns-wrap a {
+  font-size: 25px;
+}
+
+.footer-up .sns-wrap a img {
+  width: 28px;
+}
+
+/* footer-down */
+.footer-down {
+  height: 55px;
+}
+
+.footer-down .copy {
+  padding-top: 20px;
+  font-size: 12px;
+}

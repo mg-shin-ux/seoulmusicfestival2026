@@ -1,0 +1,304 @@
+@charset "UTF-8";
+
+[class$=inner] {
+  width: 100%;
+}
+
+[class$=btn] {
+  font-size: 16px;
+}
+
+[class$=btn]:hover {
+  font-size: 16px;
+  box-shadow: none;
+  transform: none;
+}
+
+/* header */
+#header {
+  height: 70px;
+}
+
+#header .header-inner {
+  padding: 0 30px 0 20px;
+}
+
+#header .logo {
+  width: 110px;
+}
+
+#header .logo a {
+  display: block;
+}
+
+#header .logo a img {
+  width: 100%;
+  height: 70px;
+}
+
+#header .gnb>ul {
+  display: none;
+  flex-direction: column;
+
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+  background-color: hsla(0, 0%, 93%, 0.95);
+  color: #333;
+}
+
+#header.shrink .gnb>ul {
+  top: 60px;
+}
+
+#header .gnb>ul::-webkit-scrollbar {
+  width: 2px;
+}
+
+#header .gnb>ul::-webkit-scrollbar-thumb {
+  background: hsla(0, 0%, 20%, 0.4);
+  border-radius: 10px;
+}
+
+#header .gnb>ul>li {
+  width: 100%;
+  text-align: left;
+}
+
+#header .gnb>ul>li>a {
+  padding: 35px 0;
+  padding-left: 30px;
+}
+
+#header .gnb>ul>li:hover>a {
+  color: #333;
+}
+
+#header .sub {
+  display: none;
+
+  position: static;
+  top: 70px;
+  left: 0;
+  width: 100%;
+}
+
+#header .sub ul li {
+  width: 100%;
+  border-radius: 0;
+  background-color: #fff;
+}
+
+#header .sub ul li a {
+  padding: 25px 0;
+  padding-left: 30px;
+  font-size: 16px;
+}
+
+#header .sub ul li a:last-child:hover {
+  border-radius: 0;
+}
+
+#header .btn-menu {
+  display: block;
+
+  background-color: transparent;
+  font-size: 30px;
+  color: hsla(0, 0%, 93%, 0.8);
+  cursor: pointer;
+}
+
+#header .btn-menu .fa-bars {
+  display: block;
+}
+
+#header .btn-menu .fa-times {
+  display: none;
+}
+
+#header .btn-menu.active .fa-bars {
+  display: none;
+}
+
+#header .btn-menu.active .fa-times {
+  display: block;
+}
+
+.header-wrap .text-box {
+  margin-top: -20px;
+}
+
+.header-wrap .text-box b {
+  font-size: 13vw;
+}
+
+.header-wrap .text-box p {
+  font-size: 3.4vw;
+}
+
+
+/* tab */
+.tab-menu {
+  top: 70px;
+}
+
+body.scrolled .tab-menu {
+  top: 60px;
+}
+
+.tab .menu {
+  gap: 10px;
+  margin-top: -110px;
+  padding: 0 3px;
+
+  white-space: nowrap;
+}
+
+.tab .menu li a {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.tab-content {
+  margin: 50px 0;
+  padding-top: 70px;
+}
+
+/* tab-content 공통요소 */
+#day1 .cast-section,
+#day1 .btn-wrap,
+#day2 .cast-section {
+  margin-top: 80px;
+}
+
+#day1 .content-time .total-date,
+#day1 .cast-section b,
+#day2 .content-time b,
+#day2 .cast-section b,
+#program .content-header b,
+#day1 .btn-wrap b,
+#day2 .btn-wrap b {
+  font-size: 6.5vw;
+}
+
+#day1 .btn-wrap,
+#day2 .btn-wrap {
+  padding: 25px;
+  margin-top: 130px;
+}
+
+#day1 .btn-wrap b,
+#day2 .btn-wrap b {
+  font-size: 5.5vw;
+  white-space: nowrap;
+}
+
+#day1 .btn-wrap .buy-btn,
+#day2 .btn-wrap .buy-btn {
+  margin-top: 10px;
+}
+
+#day1 .content-time .total-time,
+#day1 .cast-section p,
+#day2 .content-time .total-time,
+#day2 .cast-section p,
+#program .content-header .total-time,
+#day1 .btn-wrap p,
+#day2 .btn-wrap p {
+  font-size: 3vw;
+}
+
+#day1 .cast-section p,
+#day2 .cast-section p {
+  margin-bottom: 25px;
+}
+
+#day1 .cast-section .cast-list,
+#day2 .cast-section .cast-list {
+  width: 80%;
+  margin: 0 15px;
+}
+
+/* day1 */
+#day1 .opening-ceremony {
+  flex-direction: column;
+  height: 250px;
+  margin-top: 40px;
+  padding: 10px 0;
+}
+
+#day1 .opening-ceremony i {
+  font-size: 6vw;
+}
+
+#day1 .opening-ceremony .text-box {
+  margin-right: 0;
+  font-size: 2.6vw;
+  text-align: center;
+}
+
+#day1 .opening-ceremony .text-box b {
+  font-size: 5vw;
+}
+
+#day1 .opening-ceremony .text-box p {
+  margin-top: 5px;
+}
+
+#day1 .opening-ceremony .event-time {
+  font-size: 3.5vw;
+}
+
+
+
+/* footer */
+#footer {
+  padding-top: 0;
+}
+
+.footer-inner {
+  padding: 0 30px;
+}
+
+/* footer-up */
+.footer-up {
+  height: 250px;
+}
+
+.footer-up .footer-left img {
+  width: 90px;
+}
+
+.footer-up .footer-left a:first-child img {
+  width: 70px;
+}
+
+.footer-up .footer-right address {
+  margin-top: 25px;
+  font-size: 12px;
+}
+
+.footer-up .sns-wrap {
+  margin-top: 20px;
+}
+
+.footer-up .sns-wrap a {
+  font-size: 25px;
+}
+
+.footer-up .sns-wrap a img {
+  width: 28px;
+}
+
+/* footer-down */
+.footer-down {
+  height: 55px;
+}
+
+.footer-down .copy {
+  padding-top: 20px;
+  font-size: 12px;
+}

@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: Base;
+  src: url(font/NotoSansKR-Regular.ttf);
+}
+
+@font-face {
+  font-family: BaseB;
+  src: url(font/NotoSansKR-Bold.ttf);
+}
+
+@font-face {
+  font-family: En;
+  src: url(font/AstaSans-ExtraBold.ttf);
+}
