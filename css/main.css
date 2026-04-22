@@ -4,7 +4,7 @@
 /* visual */
 #visual {
   height: 720px;
-  background: url(../images/visual.png) no-repeat 50% 20% / cover;
+  background: url(../images/visual.jpg) no-repeat 50% 20% / cover;
 }
 
 #visual .color-bg {
